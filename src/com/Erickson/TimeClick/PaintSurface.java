@@ -315,7 +315,7 @@ public class PaintSurface extends SurfaceView implements Runnable, OnTouchListen
 					//score = score + 2 * Bus[i].worth + adBonus * (bonusMulti - 1) * Bus[i].worth; //Add money to score 
 					score = score + 2 * Bus[i].worth;
 					Bus[i].scored = false;
-					//Log.d("Bus", "scoring " + Bus[i].worth);
+					Log.d("Bus", "scoring " + Bus[i].worth);
 				}
 				int Y = ScreenY * (1 + i) / (Bus.length + 1);
 				int H = ScreenY / Bus.length * 3 / 4;
@@ -543,6 +543,7 @@ public class PaintSurface extends SurfaceView implements Runnable, OnTouchListen
 
 	public static void setScore(int a) {
 		score = a;
+		Log.d("setScore", "" + score);
 	}
 
 	public static String saveStart() {

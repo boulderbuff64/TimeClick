@@ -572,6 +572,7 @@ public class MainActivity extends Activity implements OnClickListener {
 
 			if (Integer.parseInt(score) > 0) {
 				PaintSurface.setScore(Integer.parseInt(score));
+				Log.d("Config Int", ""+Integer.parseInt(score));
 			} else {
 				PaintSurface.setScore(1);
 			}

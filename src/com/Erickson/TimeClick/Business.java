@@ -48,10 +48,10 @@ public class Business {
 		if (progression > 0 & progression <= 1) {
 			//progression = (float) (0.01 + (time - start + 10) / length);
 			progression = progression + (float) (bonus * (float) (time - progressTime) / length);
-			//Log.d("Update", progression + " " + time + " " + progressTime);
+			Log.d("Update", progression + " " + time + " " + progressTime);
 		}
 		if (progression > 1) {
-			//Log.d("Update Prog 1", name);
+			Log.d("Update Prog", name);
 			progression = 0;
 			scored = true;
 			//return 0;
